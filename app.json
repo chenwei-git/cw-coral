@@ -16,16 +16,25 @@
     "onReachBottomDistance": 50
   },
   "tabBar": {
+    "color" : "#000000",
+    "selectedColor": "#ff00ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"image/index/index.png",
+        "selectedIconPath": "image/index/index.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "日志",
+        "iconPath": "image/index/index.png",
+        "selectedIconPath": "image/index/index.png"
       }
-    ]
+    ],
+    "position": "bottom"
   },
   "networkTimeout": {
     "request": 10000,
