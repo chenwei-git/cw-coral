@@ -24,14 +24,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"image/index/index.png",
-        "selectedIconPath": "image/index/index.png"
+        "iconPath":"images/index/tab.png",
+        "selectedIconPath": "images/index/tab.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志",
-        "iconPath": "image/index/index.png",
-        "selectedIconPath": "image/index/index.png"
+        "iconPath": "images/index/tab.png",
+        "selectedIconPath": "images/index/tab.png"
       }
     ],
     "position": "bottom"
