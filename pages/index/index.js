@@ -46,7 +46,8 @@ Page({
   // 生命周期回调—监听页面显示
   // 页面显示/切入前台时触发
   onShow: function() {
-
+    // route 到当前页面的路径
+    console.log("index.onShow: route =", this.route);
   },
   // 生命周期回调—监听页面初次渲染完成
   // 一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互。
@@ -102,10 +103,15 @@ Page({
     console.log("index.onPageScroll: res.scrollTop =", res.scrollTop);
   },
   // 当前是 tab 页时，点击 tab 时触发
-  onTabItemTap: function() {
-
+  onTabItemTap: function(res) {
+    // 被点击tabItem的序号，从0开始
+    console.log("index.onTabItemTap: res.index =", res.index);
+    // 被点击tabItem的页面路径
+    console.log("index.onTabItemTap: res.pagePath =", res.pagePath);
+    // 被点击tabItem的按钮文字
+    console.log("index.onTabItemTap: res.text =", res.text);
   },
-  // 事件处理函数
+  // 组件事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: 'pages/logs/logs'
@@ -114,7 +120,19 @@ Page({
   getUserInfo: function(e) {
     console.log(e);
     app.globalData.userInfo = e.detail.userInfo;
+    // Page.prototype.setData(Object data, Function callback)
+    // setData 函数用于 改变this.data的值(同步), 同时将数据从逻辑层发送到视图层(异步)
+    // data 这次要改变的数据
+    // callback 界面更新渲染完毕后的回调函数
+    // 注意：
+    // 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。
+    // 仅支持设置可 JSON 化的数据。
+    // 单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据。
+    // 请不要把 data 中任何一项的 value 设为 undefined ，
+    // 否则这一项将不被设置并可能遗留一些潜在问题。
     this.setData({
+      // 其中 key 可以以数据路径的形式给出，支持改变数组中的某一项或对象的某个属性，
+      // 如'array[2].message'，'a.b.c.d'，并且不需要在 this.data 中预先定义。
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     });
