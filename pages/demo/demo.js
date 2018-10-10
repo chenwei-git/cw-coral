@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }]
   },
 
   /**
@@ -62,5 +66,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  tapName: function (event) {
+    console.log(event)
   }
 })

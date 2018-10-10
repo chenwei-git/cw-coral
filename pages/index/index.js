@@ -114,7 +114,12 @@ Page({
   // 组件事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: 'pages/logs/logs'
+      url: '/pages/logs/logs'
+    });
+  },
+  navToDemo: function() {
+    wx.navigateTo({
+      url: '/pages/demo/demo'
     });
   },
   getUserInfo: function(e) {
