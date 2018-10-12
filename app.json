@@ -5,10 +5,10 @@
     "pages/demo/demo"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#000000",
-    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "coral",
-    "navigationStyle": "default",
+    "navigationStyle": "custom",
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "dark",
     "backgroundColorTop": "#ffffff",
@@ -17,22 +17,28 @@
     "onReachBottomDistance": 50
   },
   "tabBar": {
-    "color" : "#000000",
-    "selectedColor": "#ff00ff",
+    "color" : "#808080",
+    "selectedColor": "#EEC591",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"images/index/tab.png",
-        "selectedIconPath": "images/index/tab.png"
+        "iconPath":"images/index/home-2.png",
+        "selectedIconPath": "images/index/home-1.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志",
         "iconPath": "images/index/tab.png",
         "selectedIconPath": "images/index/tab.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "收藏",
+        "iconPath": "images/index/love.png",
+        "selectedIconPath": "images/index/love.png"
       }
     ],
     "position": "bottom"
