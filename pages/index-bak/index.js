@@ -14,7 +14,7 @@ Page({
   },
   // 生命周期回调—监听页面加载
   // 页面加载时触发, 一个页面只会调用一次
-  onLoad: function (query) { // 打开当前页面路径的参数
+  onLoad: function(query) { // 打开当前页面路径的参数
     console.log("index.onLoad: query =", query);
     if (app.globalData.userInfo) {
       this.setData({
@@ -45,35 +45,35 @@ Page({
   },
   // 生命周期回调—监听页面显示
   // 页面显示/切入前台时触发
-  onShow: function () {
+  onShow: function() {
     // route 到当前页面的路径
     console.log("index.onShow: route =", this.route);
   },
   // 生命周期回调—监听页面初次渲染完成
   // 一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互。
   // 对界面内容进行设置的 API 如wx.setNavigationBarTitle，请在onReady之后进行。
-  onReady: function () {
+  onReady: function() {
 
   },
   // 生命周期回调—监听页面隐藏
   // 页面隐藏/切入后台时触发。 
   // 如 navigateTo 或底部 tab 切换到其他页面，小程序切入后台等。
-  onHide: function () {
+  onHide: function() {
 
   },
   // 生命周期回调—监听页面卸载
   // 页面卸载时触发。如redirectTo或navigateBack到其他页面时。
-  onUnload: function () {
+  onUnload: function() {
 
   },
   // 页面事件处理函数-监听用户下拉刷新事件
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
     // 可以通过wx.startPullDownRefresh触发下拉刷新，
     // 调用后触发下拉刷新动画，效果与用户手动下拉刷新一致。
     // 当处理完数据刷新后，wx.stopPullDownRefresh可以停止当前页面的下拉刷新。
   },
   // 页面事件处理函数-监听用户上拉触底事件
-  onReachBottom: function () {
+  onReachBottom: function() {
     // 可以在app.json的window选项中或页面配置中设置触发距离onReachBottomDistance。
     // 在触发距离内滑动期间，本事件只会被触发一次。
 
@@ -82,7 +82,7 @@ Page({
   // 监听用户点击页面内转发按钮（<button> 组件 open-type="share"）
   // 或右上角菜单“转发”按钮的行为，并自定义转发内容。
   // 注意：只有定义了此事件处理函数，右上角菜单才会显示“转发”按钮
-  onShareAppMessage: function (res) {
+  onShareAppMessage: function(res) {
     // 转发事件来源 button：页面内转发按钮；menu：右上角转发菜单
     console.log("index.onShareAppMessage: res.from =", res.from);
     // 如果 from 值是 button，则 target 是触发这次转发事件的 button，否则为 undefined
@@ -98,12 +98,12 @@ Page({
     };
   },
   // 页面事件处理函数-监听用户滑动页面事件
-  onPageScroll: function (res) {
+  onPageScroll: function(res) {
     // 页面在垂直方向已滚动的距离（单位px）
     console.log("index.onPageScroll: res.scrollTop =", res.scrollTop);
   },
   // 当前是 tab 页时，点击 tab 时触发
-  onTabItemTap: function (res) {
+  onTabItemTap: function(res) {
     // 被点击tabItem的序号，从0开始
     console.log("index.onTabItemTap: res.index =", res.index);
     // 被点击tabItem的页面路径
@@ -112,17 +112,17 @@ Page({
     console.log("index.onTabItemTap: res.text =", res.text);
   },
   // 组件事件处理函数
-  bindViewTap: function () {
+  bindViewTap: function() {
     wx.navigateTo({
       url: '/pages/logs/logs'
     });
   },
-  navToDemo: function () {
+  navToDemo: function() {
     wx.navigateTo({
       url: '/pages/demo/demo'
     });
   },
-  getUserInfo: function (e) {
+  getUserInfo: function(e) {
     console.log(e);
     app.globalData.userInfo = e.detail.userInfo;
     // Page.prototype.setData(Object data, Function callback)
