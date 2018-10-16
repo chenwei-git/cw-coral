@@ -1,23 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-  <view class='sub_nav_box'>
-    <view class='sub_nav_inner'>
-      <view class="book-summary-opr" id="js-book-summary-opr">
-        <a class="book-summary-btn"></a>
-      </view>
-      <view class="top_sub_nav"></view>
-      <view id="book-search-input" role="search">
-        <form>
-            <label for="search-input" class="search-icon" id="js-search-icon"></label>
-            <input type="text" id="search-input" name="search-input" placeholder="搜索"></input>
-            <button type="reset" class="clear-input-btn"></button>
-        </form>
-      </view>
-    </view>
+  <view class='index_header'>
+    <view>111</view>
+    <view>222</view>
   </view>
-  <view class="userinfo">
+  <view class='index_body'>
+    <text>44444</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="index_foot">
+    <text>22222</text>
   </view>
 </view>

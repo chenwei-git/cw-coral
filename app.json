@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index-bak/index",
     "pages/logs/logs",
     "pages/demo/demo"
   ],
@@ -35,7 +36,7 @@
         "selectedIconPath": "images/index/mine_fill.png"
       },
       {
-        "pagePath": "pages/demo/demo",
+        "pagePath": "pages/index-bak/index",
         "text": "收藏",
         "iconPath": "images/index/like.png",
         "selectedIconPath": "images/index/like_fill.png"
