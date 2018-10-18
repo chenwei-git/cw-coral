@@ -1,11 +1,15 @@
 <!--index.wxml-->
 <view class="container">
   <view class='index_header-h'>
-    <view class='index_header_v1-h-v1'>h-v1</view>
+    <view class='index_header_v1-h-v1'></view>
     <view class='index_header_v2-h-v2'>
-      <view class='index_logo-h-v2-v1'></view>
+      <view class='index_logo_wrap-h-v2-v1'>
+        <image class='index_logo_image-h-v2-v1-v1' src='/images/index/logo.png'>
+        </image>
+      </view>
       <view class='index_search_box-h-v2-v2'>
-        <input type='text' class='index_search_bar-h-v2-v2-v1'>h-v2-v2-v1</input>
+        <label class='index_search_icon-h-v2-v2-v1'></label>
+        <input type='text' class='index_search_bar-h-v2-v2-v2'></input>
       </view>
       <view class='index_v3-h-v2-v3'>h-v2-v3</view>
     </view>

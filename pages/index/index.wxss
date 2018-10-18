@@ -26,28 +26,49 @@
   align-items: center;
 }
 
-.index_logo-h-v2-v1 {
+.index_logo_wrap-h-v2-v1 {
   background-color: rgb(184, 177, 80);
   width: 100%;
   height: 100%;
   flex: 1.6;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  
+}
+
+.index_logo_image-h-v2-v1-v1 {
+  float: right;
+  height: 100%;
+  width: 80%;
 }
 
 .index_search_box-h-v2-v2 {
   background-color: rgb(184, 80, 120);
   flex: 5;
+  position: relative;
 }
 
-.index_search_bar-h-v2-v2-v1 {
+.index_search_icon-h-v2-v2-v1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  position: absolute;
+  left: 5%;
+  top:15%;
+  z-index: 10;
+}
+
+.index_search_icon-h-v2-v2-v1::before {
+  content: "";
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  background-image: url(https://developers.weixin.qq.com/miniprogram/assets/images/search@1x.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.index_search_bar-h-v2-v2-v2 {
   background-color: rgb(240, 239, 240);
   border-radius: 30px;
-}
-
-.index_search_bar-h-v2-v2-v1::first-letter {
-  background-image: url(http://www.w3school.com.cn/i/w3school_logo_white.gif);
+  vertical-align: middle;
 }
 
 .index_v3-h-v2-v3 {
