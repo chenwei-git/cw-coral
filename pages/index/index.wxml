@@ -14,7 +14,7 @@
       <view class='index_v3-h-v2-v3'>h-v2-v3</view>
     </view>
   </view>
-  <view class='index_body'>
+  <view class='index_body-b'>
     <text>44444</text>
   </view>
   <view class="index_foot">

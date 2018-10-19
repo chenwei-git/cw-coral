@@ -2,7 +2,7 @@
 
 .index_header-h {
   background-color: rgb(102, 80, 184);
-  flex: 1.1;
+  flex: 11;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,13 +46,11 @@
 }
 
 .index_search_icon-h-v2-v2-v1 {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
+  display: block;
   position: absolute;
-  left: 5%;
-  top:15%;
-  z-index: 10;
+  float: left;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 .index_search_icon-h-v2-v2-v1::before {
@@ -62,13 +60,17 @@
   height: 40rpx;
   background-image: url(https://developers.weixin.qq.com/miniprogram/assets/images/search@1x.png);
   background-repeat: no-repeat;
+  vertical-align: middle;
   cursor: pointer;
+  margin-left: 10rpx;
 }
 
 .index_search_bar-h-v2-v2-v2 {
   background-color: rgb(240, 239, 240);
   border-radius: 30px;
-  vertical-align: middle;
+  display: block;
+  float: left;
+  margin: 0 auto;
 }
 
 .index_v3-h-v2-v3 {
@@ -76,15 +78,15 @@
   flex: 3.4;
 }
 
-.index_body {
+.index_body-b {
   background-color: rgba(250, 235, 215, 0.829);
-  flex: 9.3;
+  flex: 93;
   width: 100%;
   text-align: center;
 }
 
 .index_foot {
-  flex: 0.6;
+  flex: 6;
   width: 100%;
   text-align: center;
 }
