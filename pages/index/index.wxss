@@ -78,14 +78,14 @@
   flex: 3.4;
 }
 
-.index_body-b {
+.index_main-b {
   background-color: rgba(250, 235, 215, 0.829);
   flex: 93;
   width: 100%;
   text-align: center;
 }
 
-.index_foot {
+.index_footer {
   flex: 6;
   width: 100%;
   text-align: center;
